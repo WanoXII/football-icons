@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "UnifrakturCook", cursive;
+    font-size: 28px;
+    
+
+   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    flex-direction: column; 
+    overflow-y: scroll;
+    background-size: cover;
+    background-position: center;
+   
+  
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #ffffff;
+    
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #807d7d;
+    color: #000000;
+}
+
+
+.image-container {
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.pele-image{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  position: relative;
+  right:40% ;
+  max-width: 100%;
+  width: 1000px;
+  top: 80px;
+}
+.maradona-image {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -730px;
+    left: 80%;
+    max-width: 100%;
+    width: 600px;
+}
+
+
+.cr7-image 
+{
+    margin-top: 150px;
+    position: relative;
+    bottom: 860px;
+    max-width: 100%;
+    width: 1000px;
+    right: 40%;
+  
+}
+.goat-image
+{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    position: relative;
+    bottom: 1500px;
+    left: 80%;
+}
+.Roberto-image 
+{
+    position: relative;
+    width: 800px;
+    bottom: 1500px;
+    right: 20%;
+}
+.zidan-image
+{
+    position: relative;
+    width: 600px;
+    bottom: 2980px;
+    left: 80%;
+   
+}
+.milan-image {
+    position: relative;
+    width: 700px;
+    bottom: 1400px;
+    right: 20%;
+
+}
+.baggio-image
+{
+    position: relative;
+    width: 600px;
+    bottom: 2950px;
+    left: 80%;
+
+}
+
+
+.group img:hover {
+    transform: translateY(-20px) scale(1.05);
+    z-index: 10;
+}
+
+
